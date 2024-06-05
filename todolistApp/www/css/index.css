@@ -1,0 +1,13 @@
+.done {
+    text-decoration: line-through;
+    color: green;
+}
+label {
+    background-color: grey;
+    color: white; /* Pour un meilleur contraste */
+    padding: 5px;
+    border-radius: 5px; /* Optionnel, pour arrondir les coins */
+    display: inline-block; /* Pour que le background s'applique uniquement à la taille du texte */
+    color:black;
+    text-align: center;
+}

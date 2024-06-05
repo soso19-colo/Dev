@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <meta name="color-scheme" content="light dark">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="lib/jquery.mobile-1.4.5.min.css">
+        <script src="lib/jquery.min.js"></script>
+        <script src="lib/jquery.mobile-1.4.5.min.js"></script>
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        <script src="js/index.js"></script>
+
+        <title>ToDoList</title>
+    </head>
+    <body>
+    <div class="page">
+        <div data-role="header">
+            <h1>ToDo List App</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <form>
+                <label for="task">Ajouter une tache</label>
+                <input type="text" id="task">
+                <input type="button" value="Ajouter" onclick="ajouterTask()">
+                <input type="button" value="Reinitialiser" onclick="reinitialiserList()">
+            </form>
+            <label>Tâches en cours</label>
+            <ul id="taskListInProgress" data-role="listview" data-inset="true">
+            </ul>
+            <label>Tâches terminées</label>
+            <ul id="taskListCompleted" data-role="listview" data-inset="true">
+            </ul>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h1>DIC3 &copy; June 2024</h1>
+        </div>
+    </div>
+    </body>
+</html>

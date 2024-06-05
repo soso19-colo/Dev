@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/index.js"></script>
+</head>
+
+<body>
+    <h1>Age Calculator</h1>
+    <form action="">
+        <label for="naissance">Année de naissance</label>
+        <input type="number" id="naissance" min="1900" max="2024">
+        <input type="button" value="Calculer" onclick="calculerAge()">
+        <fieldset hidden>
+            <legend>Age Calculator</legend>
+            <label id="resultat"></label>
+        </fieldset>
+    </form>
+</body>
+
+</html>
